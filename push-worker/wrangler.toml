@@ -1,0 +1,17 @@
+name = "system-push"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+VAPID_PUBLIC_KEY = "BHp_5zuq5cVxulTrynaOC51EpaLMUeoi0jgqrgWYQHclcUkopRxNHBMLj8f8_MGrmv2qb7MZRcNRO8-EnBPb2Nc"
+VAPID_SUBJECT = "https://bapakrt-system.expo.app"
+ALLOWED_ORIGINS = "https://bapakrt-system.expo.app,http://localhost:8091"
+
+# Push subscriptions (one per device).
+[[kv_namespaces]]
+binding = "SUBS"
+id = "595ba0888dbe4861a8b2ece8445493e2"
+
+# Every hour on the hour; each subscriber's local hour decides what (if anything) is sent.
+[triggers]
+crons = ["0 * * * *"]

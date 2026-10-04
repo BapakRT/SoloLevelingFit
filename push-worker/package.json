@@ -1,0 +1,21 @@
+{
+  "name": "system-push",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "tsx test/check.ts",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "^2.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260930.2",
+    "http_ece": "^1.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.2",
+    "wrangler": "^4.145.0"
+  }
+}
