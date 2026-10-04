@@ -1,0 +1,17 @@
+{
+  "name": "SYSTEM — Solo Leveling Workout",
+  "short_name": "SYSTEM",
+  "description": "A Solo Leveling-style daily workout quest. Train every day, level up.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#02050B",
+  "theme_color": "#02050B",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

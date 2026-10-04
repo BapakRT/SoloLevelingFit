@@ -1,25 +1,65 @@
 {
   "expo": {
-    "name": "SoloLevelingFit",
+    "name": "SYSTEM",
     "slug": "SoloLevelingFit",
-    "version": "1.0.0",
+    "scheme": "sololevelingfit",
+    "version": "2.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#02050B",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.bapakrt.sololevelingfit",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.bapakrt.sololevelingfit",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#02050B",
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "monochromeImage": "./assets/adaptive-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "bundler": "metro",
+      "output": "static",
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "backgroundColor": "#02050B"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#4FC3FF"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b93907e3-2a52-4e00-9004-b528608acaa8"
+      }
+    },
+    "owner": "bapakrt",
+    "updates": {
+      "url": "https://u.expo.dev/b93907e3-2a52-4e00-9004-b528608acaa8"
     }
   }
 }
